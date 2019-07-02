@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/view_background"
+        android:layout_height="match_parent"
+        android:background="@color/bg_row">
+
+        <ImageView
+            android:layout_width="@dimen/ic_delete"
+            android:id="@+id/updateicon"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_update_"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/updateicon"
+            android:text="@string/update"
+            android:textColor="#fff"
+            android:textSize="13dp"/>
+
+        <ImageView
+            android:layout_width="@dimen/ic_delete"
+            android:id="@+id/delete_icon"
+            android:layout_height="@dimen/ic_delete"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_delete"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/delete_icon"
+            android:text="@string/delete"
+            android:textColor="#fff"
+            android:textSize="13dp"/>
+    </RelativeLayout>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_foreground"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        android:background="#ffffff"
+        android:paddingBottom="@dimen/dimen_10"
+        android:paddingLeft="@dimen/activity_margin"
+        android:paddingRight="@dimen/activity_margin"
+        android:paddingTop="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dot_height"
+            android:layout_marginRight="@dimen/dot_margin_right"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorAccent"
+            android:lineSpacingExtra="0dp"
+            android:textSize="@dimen/dot_text_size" />
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/dot"
+            android:textColor="@color/timestamp"
+            android:textSize="@dimen/timestamp" />
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timestamp"
+            android:layout_toRightOf="@id/dot"
+            android:textColor="@color/note_list_text"
+            android:textSize="@dimen/note_list_text" />
+
+    </RelativeLayout>
+
+</FrameLayout>
