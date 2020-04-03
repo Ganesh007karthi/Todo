@@ -1,5 +1,5 @@
 {
-  "reviews": {
+  "reviews": [
     {
       "reviewId": "gp:AOqpTOFWpT9bUiuLyIr60rfZxjK7EusWikx3pi6j78PczNLKMjd6JRQnwQkfAum8bv7qp0P4kIQrukqP_-pDuA",
       "authorName": "Ganesh kumar",
@@ -1007,5 +1007,5 @@
         }
       }
     }
-  }
+  ]
 }
